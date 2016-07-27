@@ -44,7 +44,7 @@ let userQuery = GQLQuery(
 	withSchemaType: .Query, 
 	withQueryTitle: "users", 
 	withQueryArguments: args, 
-	withQuery: userQueryItem
+	withQueryItems: [userQueryItem]
 )
 ```
 
@@ -62,7 +62,7 @@ let userQuery = GQLQuery(
 	withSchemaType: .Mutation, 
 	withQueryTitle: "users", 
 	withQueryArguments: args, 
-	withQuery: userQueryItem
+	withQueryItems: [userQueryItem]
 )
 
 print(userQuery.queryString)
